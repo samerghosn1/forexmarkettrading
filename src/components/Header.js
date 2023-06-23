@@ -20,7 +20,7 @@ export default function Header() {
 				color='inherit'
 				sx={{ borderBottom: (theme) => `1px solid ${theme.palette.divider}` }}>
 				<Toolbar sx={{ flexWrap: 'wrap', backgroundColor: 'black' }}>
-					<img src={LogoImg} alt='logomain' style={{ width: '80%' }} />
+					<img src={LogoImg} alt='logomain' style={{ width: '71%' }} />
 					<nav>
 						<Link
 							variant='button'
@@ -29,9 +29,10 @@ export default function Header() {
 								color: 'white',
 								textDecoration: 'none',
 								fontWeight: 'bold',
+								fontSize: 13,
 							}}
 							sx={{ my: 1, mx: 1.5 }}>
-							Sevice
+							Service
 						</Link>
 						<Link
 							variant='button'
@@ -39,6 +40,7 @@ export default function Header() {
 								color: 'white',
 								textDecoration: 'none',
 								fontWeight: 'bold',
+								fontSize: 13,
 							}}
 							href='#'
 							sx={{ my: 1, mx: 1.5 }}>
@@ -50,6 +52,7 @@ export default function Header() {
 								color: 'white',
 								textDecoration: 'none',
 								fontWeight: 'bold',
+								fontSize: 13,
 							}}
 							href='#'
 							sx={{ my: 1, mx: 1.5 }}>
@@ -61,6 +64,7 @@ export default function Header() {
 								color: 'white',
 								textDecoration: 'none',
 								fontWeight: 'bold',
+								fontSize: 13,
 							}}
 							href='#'
 							sx={{ my: 1, mx: 1.5 }}>
@@ -72,6 +76,7 @@ export default function Header() {
 								color: 'white',
 								textDecoration: 'none',
 								fontWeight: 'bold',
+								fontSize: 13,
 							}}
 							href='#'
 							sx={{ my: 1, mx: 1.5 }}>
