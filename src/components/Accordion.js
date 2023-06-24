@@ -5,6 +5,7 @@ import MuiAccordion from '@mui/material/Accordion';
 import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
+import { Link } from '@mui/material';
 
 const Accordion = styled((props) => (
 	<MuiAccordion disableGutters elevation={0} square {...props} />
@@ -43,26 +44,50 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 }));
 
 export default function CustomizedAccordions() {
-	const [expanded, setExpanded] = React.useState('panel1');
+	const [expanded, setExpanded] = React.useState(false);
 
 	const handleChange = (panel) => (event, newExpanded) => {
 		setExpanded(newExpanded ? panel : false);
 	};
 
 	return (
-		<div>
+		<div style={{ margin: 'auto' }}>
 			<Accordion
 				expanded={expanded === 'panel1'}
 				onChange={handleChange('panel1')}>
 				<AccordionSummary aria-controls='panel1d-content' id='panel1d-header'>
-					<Typography>Collapsible Group Item #1</Typography>
+					<Typography>Payment Method</Typography>
 				</AccordionSummary>
 				<AccordionDetails>
 					<Typography>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-						malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum
-						dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada
-						lacus ex, sit amet blandit leo lobortis eget.
+						To subscribe to our plans, please follow these steps:
+						<ul>
+							<li>
+								Select your desired plan from the Plans and Pricing section.
+							</li>
+							<li>
+								Make the payment in the cryptocurrency USDT (Tether) to the
+								wallet address shown when joning a plan
+							</li>
+							<li>
+								After making the payment, send the payment invoice to our
+								Discord Account: Omar Ayoub#2471. (Note: Please make sure to
+								include your order details and transaction ID in the invoice.)
+							</li>
+							<li>
+								Our team will verify your payment within 24 to 48 hours. Once
+								your payment is confirmed, you will receive a Discord invitation
+								link.
+							</li>
+							<li>
+								Click on the Discord invitation link to join our community and
+								gain access to the subscribed services.
+							</li>
+						</ul>
+						For those who don't have a cryptocurrency wallet, we recommend
+						creating an account on Binance, a popular cryptocurrency exchange.
+						Follow the instructions below to create an account and
+						deposit/withdraw funds
 					</Typography>
 				</AccordionDetails>
 			</Accordion>
@@ -70,14 +95,33 @@ export default function CustomizedAccordions() {
 				expanded={expanded === 'panel2'}
 				onChange={handleChange('panel2')}>
 				<AccordionSummary aria-controls='panel2d-content' id='panel2d-header'>
-					<Typography>Collapsible Group Item #2</Typography>
+					<Typography>Creating an Account on Binance</Typography>
 				</AccordionSummary>
 				<AccordionDetails>
 					<Typography>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-						malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum
-						dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada
-						lacus ex, sit amet blandit leo lobortis eget.
+						<ul>
+							<li>
+								Visit the Binance website at https://www.binance.com/en (for
+								english) and https://www.binance.com/ar (for arabic).
+							</li>
+							<li>Click on the "Register" button to create a new account.</li>
+							<li>
+								Fill in the required information, including your email address
+								and a secure password.
+							</li>
+							<li>Complete the verification process as prompted by Binance.</li>
+							<li>
+								Once your account is verified, you can proceed with depositing
+								funds.
+							</li>
+						</ul>
+						If You need more help on how to create an account please follow the
+						steps in this{' '}
+						<span>
+							<Link href='https://www.makeuseof.com/how-to-create-an-account-on-binance/'>
+								link
+							</Link>
+						</span>
 					</Typography>
 				</AccordionDetails>
 			</Accordion>
@@ -85,14 +129,39 @@ export default function CustomizedAccordions() {
 				expanded={expanded === 'panel3'}
 				onChange={handleChange('panel3')}>
 				<AccordionSummary aria-controls='panel3d-content' id='panel3d-header'>
-					<Typography>Collapsible Group Item #3</Typography>
+					<Typography>Depositing and Withdrawing Funds on Binance</Typography>
 				</AccordionSummary>
 				<AccordionDetails>
 					<Typography>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-						malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum
-						dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada
-						lacus ex, sit amet blandit leo lobortis eget.
+						<ul>
+							<li>Log in to your Binance account.</li>
+							<li>
+								Navigate to the "Wallet" section and select "Spot Wallet" from
+								the dropdown menu.
+							</li>
+							<li>
+								Choose the cryptocurrency USDT (Tether) from the list of
+								available cryptocurrencies.
+							</li>
+							<li>
+								Send the desired amount of USDT to the provided wallet address.
+							</li>
+							<li>
+								Wait for the transaction to be confirmed on the blockchain.
+							</li>
+							<li>
+								To withdraw funds, follow a similar process, but choose the
+								"Withdraw" option instead of "Deposit" and provide the
+								destination wallet address.
+							</li>
+						</ul>
+						If You need more help on Deposit/withdraw please follow the steps in
+						this{' '}
+						<span>
+							<Link href='https://www.binance.com/en/support/faq/how-do-i-deposit-withdraw-cryptocurrency-on-binance-85a1c394ac1d489fb0bfac0ef2fceafd'>
+								link
+							</Link>
+						</span>
 					</Typography>
 				</AccordionDetails>
 			</Accordion>

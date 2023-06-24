@@ -1,60 +1,38 @@
-import React, { useState, useCallback } from 'react';
-import Gallery from 'react-photo-gallery';
-import Carousel, { Modal, ModalGateway } from 'react-images';
+import { useState } from 'react';
 
-const images = [
-	{
-		src: 'https://source.unsplash.com/2ShvY8Lf6l0/800x599',
-		width: 4,
-		height: 3,
-	},
-	{
-		src: 'https://source.unsplash.com/Dm-qxdynoEc/800x799',
-		width: 1,
-		height: 1,
-	},
-	{
-		src: 'https://source.unsplash.com/qDkso9nvCg0/600x799',
-		width: 3,
-		height: 4,
-	},
-	{
-		src: 'https://source.unsplash.com/iecJiKe_RNg/600x799',
-		width: 3,
-		height: 4,
-	},
-];
+import PhotoAlbum from 'react-photo-album';
+
+import Lightbox from 'yet-another-react-lightbox';
+import 'yet-another-react-lightbox/styles.css';
+
+// import optional lightbox plugins
+import Fullscreen from 'yet-another-react-lightbox/plugins/fullscreen';
+import Slideshow from 'yet-another-react-lightbox/plugins/slideshow';
+import Thumbnails from 'yet-another-react-lightbox/plugins/thumbnails';
+import Zoom from 'yet-another-react-lightbox/plugins/zoom';
+import 'yet-another-react-lightbox/plugins/thumbnails.css';
+import { slides } from './Slides';
 
 const CarouselMain = () => {
-	const [currentImage, setCurrentImage] = useState(0);
-	const [viewerIsOpen, setViewerIsOpen] = useState(false);
+	const [index, setIndex] = useState(-1);
 
-	const openLightbox = useCallback((event, { photo, index }) => {
-		setCurrentImage(index);
-		setViewerIsOpen(true);
-	}, []);
-
-	const closeLightbox = () => {
-		setCurrentImage(0);
-		setViewerIsOpen(false);
-	};
 	return (
 		<div>
-			<Gallery photos={images} onClick={openLightbox} />
-			<ModalGateway>
-				{viewerIsOpen ? (
-					<Modal onClose={closeLightbox}>
-						<Carousel
-							currentIndex={currentImage}
-							views={images.map((x) => ({
-								...x,
-								srcset: x.srcSet,
-								caption: x.title,
-							}))}
-						/>
-					</Modal>
-				) : null}
-			</ModalGateway>
+			<PhotoAlbum
+				photos={slides}
+				layout='rows'
+				targetRowHeight={150}
+				onClick={({ index }) => setIndex(index)}
+			/>
+
+			<Lightbox
+				slides={slides}
+				open={index >= 0}
+				index={index}
+				close={() => setIndex(-1)}
+				// enable optional lightbox plugins
+				plugins={[Fullscreen, Slideshow, Thumbnails, Zoom]}
+			/>
 		</div>
 	);
 };

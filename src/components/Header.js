@@ -5,8 +5,7 @@ import AppBar from '@mui/material/AppBar';
 import CssBaseline from '@mui/material/CssBaseline';
 import Link from '@mui/material/Link';
 import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import LogoImg from '../images/OP4.png';
+import logoheader from '../images/TOAR.png';
 
 const defaultTheme = createTheme();
 
@@ -19,65 +18,29 @@ export default function Header() {
 				elevation={0}
 				color='inherit'
 				sx={{ borderBottom: (theme) => `1px solid ${theme.palette.divider}` }}>
-				<Toolbar sx={{ flexWrap: 'wrap', backgroundColor: 'black' }}>
-					<img src={LogoImg} alt='logomain' style={{ width: '71%' }} />
+				<Toolbar
+					sx={{ flexWrap: 'wrap', backgroundColor: 'black' }}
+					className='headerCont'>
+					<img src={logoheader} alt='logomain' className='headerImg' />
+
 					<nav>
 						<Link
 							variant='button'
-							href='#'
-							style={{
-								color: 'white',
-								textDecoration: 'none',
-								fontWeight: 'bold',
-								fontSize: 13,
-							}}
+							className='headerNavLinks'
+							href='https://crm.fiper.me/registration-live?ref_id=4985471'
 							sx={{ my: 1, mx: 1.5 }}>
-							Service
+							Recommended Broker Fiper
 						</Link>
 						<Link
 							variant='button'
-							style={{
-								color: 'white',
-								textDecoration: 'none',
-								fontWeight: 'bold',
-								fontSize: 13,
-							}}
-							href='#'
+							className='headerNavLinks'
+							href='https://discord.com/users/Omar%20Ayoub#2471'
 							sx={{ my: 1, mx: 1.5 }}>
-							Pricing
+							Contact Us
 						</Link>
 						<Link
 							variant='button'
-							style={{
-								color: 'white',
-								textDecoration: 'none',
-								fontWeight: 'bold',
-								fontSize: 13,
-							}}
-							href='#'
-							sx={{ my: 1, mx: 1.5 }}>
-							Payment Info
-						</Link>
-						<Link
-							variant='button'
-							style={{
-								color: 'white',
-								textDecoration: 'none',
-								fontWeight: 'bold',
-								fontSize: 13,
-							}}
-							href='#'
-							sx={{ my: 1, mx: 1.5 }}>
-							Recommended Broker
-						</Link>
-						<Link
-							variant='button'
-							style={{
-								color: 'white',
-								textDecoration: 'none',
-								fontWeight: 'bold',
-								fontSize: 13,
-							}}
+							className='headerNavLinks'
 							href='#'
 							sx={{ my: 1, mx: 1.5 }}>
 							AR
