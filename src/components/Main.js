@@ -3,7 +3,7 @@ import Header from './Header';
 import Pricing from './Pricing';
 import { Typography } from '@mui/material';
 import CustomizedAccordions from './Accordion';
-import HeaderImg from '../images/imgheaders.jpeg';
+import HeaderImg from '../images/headerlogo.jpeg';
 import '../styles/Main.css';
 import PaymentDialog from './PaymentDialog';
 

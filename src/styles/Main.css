@@ -153,6 +153,8 @@
 	color: white;
 	font-size: 25px;
 	padding: 0px 10px;
+	font-size: 19px;
+	text-align: center;
 }
 .faqCont {
 	display: flex;
@@ -269,6 +271,10 @@
 		width: 70%;
 		padding: 10px;
 	}
+	.quoteContent {
+		padding: 20px;
+		display: revert;
+	}
 
 	.descSecTitle {
 		font-size: 36px;
@@ -354,11 +360,6 @@
 		padding: 10px;
 	}
 
-	.descSecLisCont,
-	.addSecLisCont {
-		align-items: flex-start;
-	}
-
 	.descSecListTitle {
 		font-size: 23px;
 	}
@@ -366,10 +367,6 @@
 	.descSecListItems,
 	.addSecListItems {
 		margin-bottom: 10px;
-	}
-
-	.QRCodeCont {
-		height: 208px;
 	}
 
 	.addContentSecTitle {
@@ -397,5 +394,12 @@
 	.faqTitle {
 		font-size: 40px;
 		padding: 30px;
+	}
+}
+
+@media only screen and (min-width: 1026px) and (max-width: 1829px) {
+	.quoteContent {
+		padding: 10px;
+		display: revert;
 	}
 }
