@@ -5,8 +5,10 @@ import { Typography } from '@mui/material';
 import CustomizedAccordions from './Accordion';
 import HeaderImg from '../images/imgheaders.jpeg';
 import '../styles/Main.css';
+import PaymentDialog from './PaymentDialog';
 
 const Main = () => {
+	const [isShown, setIsShown] = React.useState(false);
 	return (
 		<div className='mainContainer'>
 			<Header />
@@ -84,25 +86,9 @@ const Main = () => {
 					trader who doesn't rely on signals.
 				</p>
 			</div>
-			<div
-				style={{
-					justifyContent: 'center',
-					display: 'flex',
-					flexDirection: 'column',
-					paddingTop: 30,
-					marginBottom: 130,
-				}}>
-				<h2
-					style={{
-						color: 'white',
-						fontSize: 40,
-						textAlign: 'center',
-						backgroundColor: '#363842',
-						padding: 30,
-					}}>
-					Additional Content
-				</h2>
-				<p style={{ color: 'white', margin: 'auto' }}>
+			<div className='addContentSecCont'>
+				<h2 className='addContentSecTitle'>Additional Content</h2>
+				<p className='addContentSec'>
 					In addition to the features mentioned in the 'What We Offer' section,
 					our services also include the following content:
 					<ul>
@@ -133,16 +119,8 @@ const Main = () => {
 				</p>
 			</div>
 
-			<div
-				style={{
-					backgroundColor: '#006d23',
-					display: 'flex',
-					justifyContent: 'center',
-					alignItems: 'center',
-					paddingTop: 10,
-					margin: '80px 0px',
-				}}>
-				<div style={{ display: 'flex' }}>
+			<div className='firstQouteCont'>
+				<div className='quoteContent'>
 					<svg version='1.1' width='64px' height='64px'>
 						<g>
 							<path
@@ -157,7 +135,7 @@ const Main = () => {
 							/>
 						</g>
 					</svg>
-					<p style={{ color: 'white', fontSize: 30 }}>
+					<p className='firstQuote'>
 						The goal of a successful trader is to make the best trades, money is
 						secondary.
 					</p>
@@ -178,38 +156,13 @@ const Main = () => {
 				</div>
 			</div>
 
-			<div
-				style={{
-					justifyContent: 'center',
-					display: 'flex',
-					flexDirection: 'column',
-					paddingTop: 30,
-					margin: '80px 0px',
-					marginBottom: 130,
-				}}>
-				<h2
-					style={{
-						color: 'white',
-						fontSize: 40,
-						textAlign: 'center',
-						backgroundColor: '#363842',
-						padding: 30,
-					}}>
-					Plans & Pricing
-				</h2>
+			<div className='pricingCont'>
+				<h2 className='pricingTitle'>Plans & Pricing</h2>
 
-				<Pricing />
+				<Pricing setIsShown={setIsShown} />
 			</div>
-			<div
-				style={{
-					backgroundColor: '#006d23',
-					display: 'flex',
-					justifyContent: 'center',
-					alignItems: 'center',
-					padding: 20,
-					margin: '80px 0px',
-				}}>
-				<div style={{ display: 'flex' }}>
+			<div className='secondQuoteCont'>
+				<div className='quoteContent'>
 					<svg version='1.1' width='64px' height='64px'>
 						<g>
 							<path
@@ -224,7 +177,7 @@ const Main = () => {
 							/>
 						</g>
 					</svg>
-					<p style={{ color: 'white', fontSize: 25, padding: '0px 10px' }}>
+					<p className='secondQuote'>
 						The typical trader is obsessed with the outcome of the trade, while
 						a professional trader is focused on the process of trading and lets
 						the outcomes take care of themselves.
@@ -267,24 +220,8 @@ const Main = () => {
 				<CarouselMain />
 			</div> */}
 
-			<div
-				style={{
-					justifyContent: 'center',
-					display: 'flex',
-					flexDirection: 'column',
-					paddingTop: 30,
-					margin: '80px 0px',
-				}}>
-				<h2
-					style={{
-						color: 'white',
-						fontSize: 40,
-						textAlign: 'center',
-						backgroundColor: '#363842',
-						padding: 30,
-					}}>
-					Frequently Asked Questions (FAQ)
-				</h2>
+			<div className='faqCont'>
+				<h2 className='faqTitle'>Frequently Asked Questions (FAQ)</h2>
 				<CustomizedAccordions />
 			</div>
 
@@ -305,6 +242,7 @@ const Main = () => {
 					Developed By Samer Ghosn Development
 				</Typography>
 			</div>
+			<PaymentDialog isShown={isShown} setIsShown={setIsShown} />
 		</div>
 	);
 };

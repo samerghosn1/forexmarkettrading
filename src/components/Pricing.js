@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -46,7 +46,7 @@ const tiers = [
 	},
 ];
 
-export default function Pricing() {
+export default function Pricing({ setIsShown }) {
 	return (
 		<Container maxWidth='md' component='main'>
 			<Grid
@@ -114,7 +114,10 @@ export default function Pricing() {
 								</ul>
 							</CardContent>
 							<CardActions>
-								<Button fullWidth variant={tier.buttonVariant}>
+								<Button
+									fullWidth
+									variant={tier.buttonVariant}
+									onClick={() => setIsShown(true)}>
 									{tier.buttonText}
 								</Button>
 							</CardActions>

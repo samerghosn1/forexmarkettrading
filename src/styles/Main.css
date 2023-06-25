@@ -83,3 +83,319 @@
 	margin: 0px;
 	margin-bottom: 10px;
 }
+
+.QRCodeCont {
+	display: flex;
+	justify-content: center;
+	height: 208px;
+}
+.addContentSecCont {
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	padding-top: 30px;
+	margin-bottom: 130px;
+}
+.addContentSecTitle {
+	color: white;
+	font-size: 40px;
+	text-align: center;
+	background-color: #363842;
+	padding: 30px;
+}
+
+.addContentSec {
+	color: white;
+	margin: auto;
+}
+
+.firstQouteCont {
+	background-color: #006d23;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 10px;
+	margin: 80px 0px;
+}
+.quoteContent {
+	display: flex;
+}
+
+.firstQuote {
+	color: white;
+	font-size: 30px;
+}
+
+.pricingCont {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding-top: 30px;
+	margin: 80px 0px;
+	margin-bottom: 130px;
+}
+.pricingTitle {
+	color: white;
+	font-size: 40px;
+	text-align: center;
+	background-color: #363842;
+	padding: 30px;
+}
+.secondQuoteCont {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	margin: 80px 0px;
+	background-color: #006d23;
+}
+.secondQuote {
+	color: white;
+	font-size: 25px;
+	padding: 0px 10px;
+}
+.faqCont {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding-top: 30px;
+	margin: 80px 0px;
+}
+.faqTitle {
+	color: white;
+	font-size: 40px;
+	text-align: center;
+	background-color: #363842;
+	padding: 30px;
+}
+
+/* @media only screen and (max-width: 767px) {
+	.headerImg {
+		width: 375px;
+	}
+
+	.headerNavLinks {
+		font-size: 11px !important;
+	}
+} */
+/* Media Query for Phones (up to 767px) */
+@media only screen and (max-width: 767px) {
+	.headerImg {
+		width: 375px;
+	}
+
+	.headerNavLinks {
+		font-size: 11px !important;
+	}
+
+	.titleMainImg {
+		width: 100%;
+		padding: 10px;
+	}
+	.mainTitleCont {
+		flex-direction: column;
+	}
+	.descSecTitle {
+		font-size: 30px;
+		padding: 20px;
+	}
+
+	.descSection {
+		font-size: 16px;
+		padding: 5px;
+	}
+
+	.descSecLisCont,
+	.addSecLisCont {
+		align-items: center;
+	}
+
+	.descSecListTitle {
+		font-size: 18px;
+	}
+
+	.descSecListItems,
+	.addSecListItems {
+		margin-bottom: 5px;
+		font-size: 14px;
+	}
+
+	.QRCodeCont {
+		height: 150px;
+	}
+
+	.addContentSecTitle {
+		font-size: 30px;
+		padding: 20px;
+	}
+
+	.addContentSec {
+		margin: 0 auto;
+		max-width: 300px;
+		font-size: 14px;
+	}
+
+	.firstQuote {
+		font-size: 20px;
+	}
+
+	.quoteContent {
+		padding: 20px;
+		display: revert;
+	}
+
+	.pricingTitle {
+		font-size: 30px;
+		padding: 20px;
+	}
+
+	.secondQuote {
+		font-size: 18px;
+	}
+
+	.faqTitle {
+		font-size: 30px;
+		padding: 20px;
+	}
+}
+
+/* Media Query for Tablets (768px to 1023px) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	.headerImg {
+		width: 70%;
+	}
+
+	.titleMainImg {
+		width: 70%;
+		padding: 10px;
+	}
+
+	.descSecTitle {
+		font-size: 36px;
+		padding: 25px;
+	}
+
+	.descSection {
+		font-size: 16px;
+		padding: 10px;
+	}
+
+	.descSecLisCont,
+	.addSecLisCont {
+		align-items: flex-start;
+	}
+	.quoteContent {
+		padding: 10px;
+		display: revert;
+	}
+
+	.descSecListTitle {
+		font-size: 20px;
+	}
+
+	.descSecListItems,
+	.addSecListItems {
+		margin-bottom: 10px;
+		font-size: 16px;
+	}
+
+	.QRCodeCont {
+		height: 180px;
+	}
+
+	.addContentSecTitle {
+		font-size: 36px;
+		padding: 25px;
+	}
+
+	.addContentSec {
+		margin: 0 auto;
+		max-width: 500px;
+		font-size: 16px;
+	}
+
+	.firstQuote {
+		font-size: 26px;
+	}
+
+	.pricingTitle {
+		font-size: 36px;
+		padding: 25px;
+	}
+
+	.secondQuote {
+		font-size: 20px;
+	}
+
+	.faqTitle {
+		font-size: 36px;
+		padding: 25px;
+	}
+}
+
+/* Media Query for Laptops (1024px and above) */
+@media only screen and (min-width: 1024px) {
+	.headerImg {
+		width: 500px;
+	}
+
+	.titleMainImg {
+		width: 50%;
+		padding: 10px;
+	}
+
+	.descSecTitle {
+		font-size: 42px;
+		padding: 30px;
+	}
+
+	.descSection {
+		font-size: 18px;
+		padding: 10px;
+	}
+
+	.descSecLisCont,
+	.addSecLisCont {
+		align-items: flex-start;
+	}
+
+	.descSecListTitle {
+		font-size: 23px;
+	}
+
+	.descSecListItems,
+	.addSecListItems {
+		margin-bottom: 10px;
+	}
+
+	.QRCodeCont {
+		height: 208px;
+	}
+
+	.addContentSecTitle {
+		font-size: 40px;
+		padding: 30px;
+	}
+
+	.addContentSec {
+		margin: auto;
+	}
+
+	.firstQuote {
+		font-size: 30px;
+	}
+
+	.pricingTitle {
+		font-size: 40px;
+		padding: 30px;
+	}
+
+	.secondQuote {
+		font-size: 25px;
+	}
+
+	.faqTitle {
+		font-size: 40px;
+		padding: 30px;
+	}
+}
