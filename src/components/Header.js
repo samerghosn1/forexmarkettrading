@@ -41,7 +41,7 @@ export default function Header() {
 						<Link
 							variant='button'
 							className='headerNavLinks'
-							href='#'
+							href='https://oaforexmarkettrading-netlify-app.translate.goog/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp'
 							sx={{ my: 1, mx: 1.5 }}>
 							AR
 						</Link>
