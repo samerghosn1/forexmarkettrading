@@ -397,9 +397,9 @@
 	}
 }
 
-@media only screen and (min-width: 1026px) and (max-width: 1829px) {
-	.quoteContent {
-		padding: 10px;
-		display: revert;
+@media only screen and (min-width: 1267px) and (max-width: 1829px) {
+	.secondQuote {
+		font-size: 25px;
+		width: 1000px;
 	}
 }
