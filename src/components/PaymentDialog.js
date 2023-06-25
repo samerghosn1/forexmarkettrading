@@ -9,7 +9,7 @@ const PaymentDialog = ({ isShown, setIsShown }) => {
 			<Dialog
 				onConfirm={() => {
 					toaster.success(
-						'Thank you for subscribing, Your invitation link will be sent within 24-48 Hours once the payment is confirmed',
+						'Thank you for subscribing, Please send the invoice to our Discord Account and we will verify your payment in 24 to 48 hours',
 						{ duration: 10 }
 					);
 					setIsShown(false);

@@ -239,7 +239,7 @@ const Main = () => {
 					color='text.secondary'
 					align='center'
 					sx={{ mt: 5, color: 'white', fontWeight: 'bold' }}>
-					Developed By Samer Ghosn Development
+					Developed By SG Development
 				</Typography>
 			</div>
 			<PaymentDialog isShown={isShown} setIsShown={setIsShown} />
