@@ -80,10 +80,14 @@ const Main = () => {
 					financial markets, providing an explanation of our vision. The Discord
 					channel includes a category for members to chat and share their own
 					analysis, fostering a collaborative environment where traders can help
-					each other and grow together to reach a higher level of trading. Note:
-					We do not provide signals. Instead, we teach you how to find
-					opportunities in the market, enabling you to become an independent
-					trader who doesn't rely on signals.
+					each other and grow together to reach a higher level of trading.
+					<br />
+					<br />
+					<span style={{ fontWeight: 'bolder' }}>
+						Note: We do not provide signals. Instead, we teach you how to find
+						opportunities in the market, enabling you to become an independent
+						trader who doesn't rely on signals.
+					</span>
 				</p>
 			</div>
 			<div className='addContentSecCont'>

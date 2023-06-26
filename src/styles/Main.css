@@ -170,16 +170,28 @@
 	background-color: #363842;
 	padding: 30px;
 }
+.logoBackground {
+	border: none;
+	background: transparent;
+}
 
-/* @media only screen and (max-width: 767px) {
-	.headerImg {
-		width: 375px;
-	}
+.paymentLogosCont {
+	display: flex;
+	gap: 10px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid black;
+}
 
-	.headerNavLinks {
-		font-size: 11px !important;
-	}
-} */
+.westernUnionImg {
+	width: 75px;
+}
+
+.usdtImg {
+	width: 90px;
+}
+
+/* media queries */
+
 /* Media Query for Phones (up to 767px) */
 @media only screen and (max-width: 767px) {
 	.headerImg {

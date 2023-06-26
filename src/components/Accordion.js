@@ -65,14 +65,21 @@ export default function CustomizedAccordions() {
 							<li>
 								Select your desired plan from the Plans and Pricing section.
 							</li>
+							<li>Select a Payment Method.</li>
 							<li>
-								Make the payment in the cryptocurrency USDT (Tether) to the
-								wallet address shown when joning a plan
+								For USDT option, send the cryptocurrency USDT (Tether) to the
+								wallet address shown in the payment details
 							</li>
 							<li>
-								After making the payment, send the payment invoice to our
-								Discord Account: Omar Ayoub#2471. (Note: Please make sure to
-								include your order details and transaction ID in the invoice.)
+								For Western Union option, transfer the payment amount to the
+								recipient Omar Ayoub
+							</li>
+							<li>
+								After making the payment using any option (usdt or Western
+								Union), send the payment invoice to our Discord Account:
+								oaforexmarkettrading (Note: Please make sure to include your
+								order details and transaction ID in the invoice for both
+								options.)
 							</li>
 							<li>
 								Our team will verify your payment within 24 to 48 hours. Once
@@ -84,10 +91,10 @@ export default function CustomizedAccordions() {
 								gain access to the subscribed services.
 							</li>
 						</ul>
-						For those who don't have a cryptocurrency wallet, we recommend
-						creating an account on Binance, a popular cryptocurrency exchange.
-						Follow the instructions below to create an account and
-						deposit/withdraw funds
+						For those who don't have a cryptocurrency wallet and want to pay
+						with the USDT option, we recommend creating an account on Binance, a
+						popular cryptocurrency exchange. Follow the instructions below to
+						create an account and deposit/withdraw funds
 					</Typography>
 				</AccordionDetails>
 			</Accordion>
