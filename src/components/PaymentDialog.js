@@ -53,7 +53,7 @@ const PaymentDialog = ({ isShown, setIsShown }) => {
 						<img src={usdtLogo} alt='westernunion' className='usdtImg' />
 					</button>
 				</div>
-				{usdt == true ? (
+				{usdt === true ? (
 					<div>
 						<div className='QRCodeCont'>
 							<img src={walletQR} alt='qrcode' />
@@ -77,7 +77,7 @@ const PaymentDialog = ({ isShown, setIsShown }) => {
 					</div>
 				) : null}
 
-				{westernunion == true ? (
+				{westernunion === true ? (
 					<div>
 						<div>
 							<Label>Recipient Name:</Label>
