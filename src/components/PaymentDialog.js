@@ -84,6 +84,10 @@ const PaymentDialog = ({ isShown, setIsShown }) => {
 							<Typography>Omar Ayoub</Typography>
 						</div>
 						<div>
+							<Label>Country:</Label>
+							<Typography>Lebanon</Typography>
+						</div>
+						<div>
 							<Label>Note:</Label>
 							<Typography>
 								Please make sure to send the western union invoice to our
