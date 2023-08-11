@@ -11,6 +11,8 @@ import Slideshow from 'yet-another-react-lightbox/plugins/slideshow';
 import Thumbnails from 'yet-another-react-lightbox/plugins/thumbnails';
 import Zoom from 'yet-another-react-lightbox/plugins/zoom';
 import 'yet-another-react-lightbox/plugins/thumbnails.css';
+import Captions from 'yet-another-react-lightbox/plugins/captions';
+import 'yet-another-react-lightbox/plugins/captions.css';
 import { slides } from './Slides';
 
 const CarouselMain = () => {
@@ -31,7 +33,8 @@ const CarouselMain = () => {
 				index={index}
 				close={() => setIndex(-1)}
 				// enable optional lightbox plugins
-				plugins={[Fullscreen, Slideshow, Thumbnails, Zoom]}
+				plugins={[Fullscreen, Slideshow, Thumbnails, Zoom, Captions]}
+				captions={{ visible: true }}
 			/>
 		</div>
 	);

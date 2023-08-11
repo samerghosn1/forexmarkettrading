@@ -6,6 +6,7 @@ import CustomizedAccordions from './Accordion';
 import HeaderImg from '../images/headerlogo.jpeg';
 import '../styles/Main.css';
 import PaymentDialog from './PaymentDialog';
+import CarouselMain from './Carousel';
 
 const Main = () => {
 	const [isShown, setIsShown] = React.useState(false);
@@ -203,7 +204,7 @@ const Main = () => {
 				</div>
 			</div>
 
-			{/* <div
+			<div
 				style={{
 					justifyContent: 'center',
 					display: 'flex',
@@ -219,10 +220,10 @@ const Main = () => {
 						backgroundColor: '#363842',
 						padding: 30,
 					}}>
-					Examples On What This Service Offers
+					Our Recent Weekly Results
 				</h2>
 				<CarouselMain />
-			</div> */}
+			</div>
 
 			<div className='faqCont'>
 				<h2 className='faqTitle'>Frequently Asked Questions (FAQ)</h2>
